@@ -2,6 +2,7 @@
 A web browser coded with PyQt5 for my school project
 PyQt5 library used in this project.
 For viewing web sites, QtWebEngineWidgets form PyQt5 is used .
+SQLite is used for storing history list in database, you can use DB Browser for SQLite (free) program for displaying database. [Download link](https://sqlitebrowser.org/dl/)
 ## .py files
 ### webBrowser.py
 webBrowser.py is main code that contains web browser window.
