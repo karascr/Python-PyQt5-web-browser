@@ -22,6 +22,16 @@ class WebBrowser(QWidget):
         self.connection = sqlite3.connect("webBrowserDB.db")
         self.cursor = self.connection.cursor()
 
+        # create history table
+        cursor.execute("""CREATE TABLE IF NOT EXISTS "history" (
+                   "id"	INTEGER,
+                   "title"	TEXT,
+                   "url"	TEXT,
+                   "date"	TEXT,
+               	PRIMARY KEY("id")
+               	)""")
+
+
         verticalLayout = QVBoxLayout()
 
         self.visitedPageList = []
@@ -159,7 +169,6 @@ class WebBrowser(QWidget):
             if i == siteInfo:
                 self.visitedPageList.remove(i)
         self.visitedPageList.append(siteInfo)
-        print(self.visitedPageList)
 
         if len(self.visitedPageList) > 1: #if there is two urls in the list, set back button enabled
             self.backBtn.setEnabled(1)
