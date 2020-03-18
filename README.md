@@ -4,11 +4,11 @@ PyQt5 library used in this project.
 For viewing web sites, QtWebEngineWidgets form PyQt5 is used.
 SQLite is used for storing the history list in the database, you can use the DB Browser for SQLite (free) program for displaying database. [Download link](https://sqlitebrowser.org/dl/)
 ## Installation
-Create a new project and copy files into this project.
+Create a new project and copy files into this project. Then run main.py.
 
 ## .py files
-### webBrowser.py
-webBrowser.py is the main code that contains a web browser window.
+### main.py
+main.py is the main code that contains a web browser window.
 ![image-of-web-browser](https://muhammetkara.net/wp-content/uploads/2020/01/WebBrowser.png)
 ### baclist.py
 backlist.py is a class that creates a window when the back button is clicked. This window shows sites you have visited and allows you to open the clicked one.
