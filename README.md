@@ -10,7 +10,7 @@ Create a new project and copy files into this project. Then run main.py.
 ### main.py
 main.py is the main code that contains a web browser window.
 ![image-of-web-browser](https://muhammetkara.net/wp-content/uploads/2020/01/WebBrowser.png)
-### baclist.py
+### backlist.py
 backlist.py is a class that creates a window when the back button is clicked. This window shows sites you have visited and allows you to open the clicked one.
 ![image-of-backlist](https://muhammetkara.net/wp-content/uploads/2020/01/backlist.png)
 ### historyWindow.py
